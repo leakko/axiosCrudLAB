@@ -25,15 +25,15 @@ module.exports.createJoke = (req, res, next) => {
   res.render("jokes/new")
 }
 
-module.exports.doCreateJoke = (req, res, next) => {
-  axios.post(`http://localhost:8000/jokes`, req.body)
-  .then(() => {
-    res.redirect("/")
-  })
-  .catch((e) => {
-    next(e)
-  })
-};
+// module.exports.doCreateJoke = (req, res, next) => {
+//   axios.post(`http://localhost:8000/jokes`, req.body)
+//   .then(() => {
+//     res.redirect("/")
+//   })
+//   .catch((e) => {
+//     next(e)
+//   })
+// };
 
 module.exports.editJoke = (req, res, next) => {
   const { id } = req.params;
@@ -44,15 +44,15 @@ module.exports.editJoke = (req, res, next) => {
   })
 }
 
-module.exports.doEditJoke = (req, res, next) => {
-  const { title, start, end } = req.body;
-  const { id } = req.params;
-  axios.patch(`http://localhost:8000/jokes/${id}`, {
-    title: title,
-    start: start,
-    end: end
-  })
-  .then(() => {
-    res.redirect("/");
-  })
-}
+// module.exports.doEditJoke = (req, res, next) => {
+//   const { title, start, end } = req.body;
+//   const { id } = req.params;
+//   axios.patch(`http://localhost:8000/jokes/${id}`, {
+//     title: title,
+//     start: start,
+//     end: end
+//   })
+//   .then(() => {
+//     res.redirect("/");
+//   })
+// }

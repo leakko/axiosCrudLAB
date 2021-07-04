@@ -1,6 +1,6 @@
 <h1>Midifica el chiste</h1>
 
-<form action="/{{id}}/edit" method="POST">
+<form>
   <div class="mb-3">
     <label for="title" class="form-label">Título</label>
     <input type="text" class="form-control" id="title" name="title" value="{{title}}">
@@ -13,5 +13,7 @@
     <label for="end" class="form-label">Final</label>
     <input type="text" class="form-control" id="end" name="end" value="{{end}}">
   </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <button class="btn btn-primary" id="editBtn">Submit</button>
 </form>
+
+  <script src="/javascripts/script.js"></script>
