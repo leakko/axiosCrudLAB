@@ -30,7 +30,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
       
-
+hbs.registerPartials(__dirname + `/views/partials`)
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
 app.use(express.static(path.join(__dirname, 'public')));
@@ -43,8 +43,17 @@ app.locals.title = 'Express - Generated with IronGenerator';
 
 
 
-const index = require('./routes/index');
-app.use('/', index);
+const JokesRouter = require('./routes/jokes.router');
+app.use('/', JokesRouter);
+
+//handle errors
+
+app.use((req, res, next) => {
+  res.status(404).send('404. Not Found');
+})
+app.use((error, req, res, next) => {
+  res.status(500).send(`Something went wrong! ${error}`);
+});
 
 
 module.exports = app;

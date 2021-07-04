@@ -1,0 +1,40 @@
+{
+  "jokes": [
+    {
+      "id": 1,
+      "title": "Peter Pán",
+      "start": "¿Por qué sabemos que Peter Pan nació en Israel?",
+      "end": "Porque es del país del nunca Hamás"
+    },
+    {
+      "id": 2,
+      "title": "Fuera o fuese",
+      "start": "-- Paco! Que se dice fuera o fuese?   ++ Hombre se dice fuese",
+      "end": "-- Pues llevas un huevo fuese"
+    },
+    {
+      "id": 3,
+      "title": "Plato favorito",
+      "start": "Oye, ¿cuál es tu plato favorito y por qué?",
+      "end": "Pues el hondo, porque cabe más comida…"
+    },
+    {
+      "id": 4,
+      "title": "Focas",
+      "start": "¿Por qué las focas del circo miran siempre hacia arriba?",
+      "end": "Porque es donde están los focos"
+    },
+    {
+      "id": 5,
+      "title": "Comida",
+      "start": "¡Estás obsesionado con la comida!",
+      "end": "No sé a qué te refieres croquetamente"
+    },
+    {
+      "id": 6,
+      "title": "¿Qué está más lejos?",
+      "start": "Papá, ¿qué está más lejos, Córdoba o la Luna?",
+      "end": "Pero vamos a ver, ¿tú ves desde aquí Córdoba?"
+    }
+  ]
+}
